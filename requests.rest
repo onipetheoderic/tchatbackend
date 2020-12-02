@@ -1,0 +1,56 @@
+GET http://localhost:8000/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYzYxNjJiOWY5YjMxMWNmMGFkOWE1ZiIsImlhdCI6MTYwNjgxNzU2OH0.Hf-I0yuHpUrYIJxVtJuewrMYiWhlsa-9i_oyAuSZVd8
+
+
+###
+
+POST http://localhost:8000/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYzYxNjJiOWY5YjMxMWNmMGFkOWE1ZiIsImlhdCI6MTYwNjgxNzU2OH0.Hf-I0yuHpUrYIJxVtJuewrMYiWhlsa-9i_oyAuSZVd8
+
+{
+    "name": "Hackers Lounge"
+}
+
+
+###
+
+GET http://localhost:8000/chatroom
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDU3OTgyOTd9.18_l3myImyFfdfMHh_Ajz1xDYyKQxdneDjHoSF_vjEo
+
+
+
+###
+
+POST http://localhost:8000/chatroom
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDU3OTgyOTd9.18_l3myImyFfdfMHh_Ajz1xDYyKQxdneDjHoSF_vjEo
+
+{
+    "name": "Javascript devs Group"
+}
+
+###
+
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "phone": "07039148866",
+    "password": "123455"
+}
+
+
+###
+
+POST  http://localhost:8000/user/register
+Content-Type: application/json
+
+{
+    "name": "theoderic",
+    "email": "onipetheoderic1@gmail.com",
+    "phone": "09071178884",
+    "password": "123455"
+}
